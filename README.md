@@ -65,7 +65,7 @@ For example:
 - You want to quickly check all "Allow Edit Access" checkboxes for these fields without doing it manually.
 - You need a reliable way to automate this process across different profiles and objects.
 
-![Usage Example](./assets/usage_example.gif)
+![Usage Example](./assets/usage-example.gif)
 
 ## Technical Details
 
