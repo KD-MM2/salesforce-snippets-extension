@@ -1,0 +1,48 @@
+{
+  "name": "salesforce-snippets-extension",
+  "version": "1.0.0",
+  "description": "A Chrome extension that provides quick automation tools for Salesforce Lightning platform.",
+  "main": "dist/background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --watch --config webpack.config.js",
+    "dev": "npm run watch",
+    "clean": "rimraf dist",
+    "lint": "prettier --check src/**/*.{ts,js,json}",
+    "format": "prettier --write src/**/*.{ts,js,json}"
+  },
+  "keywords": [
+    "salesforce",
+    "chrome-extension",
+    "automation",
+    "field-level-security",
+    "profile-management",
+    "salesforce-lightning"
+  ],
+  "author": "Cao Thai Duong <kaotd.z3@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KD-MM2/salesforce-snippets-extension.git"
+  },
+  "homepage": "https://github.com/KD-MM2/salesforce-snippets-extension#readme",
+  "bugs": {
+    "url": "https://github.com/KD-MM2/salesforce-snippets-extension/issues"
+  },
+  "packageManager": "pnpm@10.12.4",
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.9",
+    "copy-webpack-plugin": "^13.0.1",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.2",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
+  }
+}
