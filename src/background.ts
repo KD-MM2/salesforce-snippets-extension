@@ -1,4 +1,4 @@
-import createContextMenus from "./menu";
+import createContextMenus from "@/menu";
 
 chrome.runtime.onStartup.addListener(createContextMenus);
 chrome.runtime.onInstalled.addListener(createContextMenus);
@@ -12,6 +12,9 @@ chrome.contextMenus.onClicked.addListener((info: chrome.contextMenus.OnClickData
     switch (menuItemId) {
         case "check_all_allow_edit_access":
             chrome.tabs.sendMessage(tab.id, { action: "checkAllAllowEditAccess" });
+            break;
+        case "check_all_field_history":
+            chrome.tabs.sendMessage(tab.id, { action: "checkAllFieldHistory" });
             break;
         // Add more cases as needed
     }

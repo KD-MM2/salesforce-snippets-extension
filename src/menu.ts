@@ -32,6 +32,20 @@ const contextMenus: ContextMenuItem = {
                             ]
                         }
                     ]
+                },
+                {
+                    "id": "custom_object",
+                    "title": "カスタムオブジェクト",
+                    "parentId": "settings",
+                    "contexts": [PAGE],
+                    "children": [
+                        {
+                            "id": "check_all_field_history",
+                            "title": "「項目の履歴」をすべてチェック",
+                            "parentId": "custom_object",
+                            "contexts": [PAGE]
+                        }
+                    ]
                 }
             ]
         }

@@ -1,15 +1,11 @@
 import { findAndProcessCheckboxes } from "@/utils/utils";
 
-export default function checkAllAllowEditAccess() {
-    console.log('checkAllAllowEditAccess called');
+export default function checkAllFieldHistory() {
+    console.log('checkAllFieldHistory called');
 
     // Try multiple selectors in case the structure varies
     const selectors = [
-        'td.dataCell.displayedCol input[type="checkbox"]',
-        'td.dataCell input[type="checkbox"]',
-        '.dataCell.displayedCol input[type="checkbox"]',
-        '.dataCell input[type="checkbox"]',
-        'input[type="checkbox"][id*="edit_"]'
+        'td.dataCol input[type="checkbox"]'
     ];
 
 
